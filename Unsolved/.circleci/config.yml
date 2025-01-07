@@ -20,7 +20,7 @@ workflows:
   run-tests:
     jobs:
       - start-server
-      # TODO: Add a new job to run the component tests
+      # TODO: Add a new job to run the component tests: done!
       - cypress/run:
           name: run-component-tests
           cypress-command: npx cypress run --component # copied from 13-Ins_Continuous-Integration/Unsolved/.circleci/config.yml
